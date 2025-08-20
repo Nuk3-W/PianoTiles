@@ -1,5 +1,10 @@
 #include <SPI.h>
 #include <stdio.h>
+// cosntants
+// ----------------------------------------------------------------------------------------------------------------------------------------
+// if using a differnet micocontroller just change pin numbers code is standard c++ except SPI so thats the only things you need to change
+// you might be wondering why we went with bindary instead of one hot encoding, we didnt have enough pins and neither will you unless you use 
+// a differnet microcontroller like some esp32 or arduino mega
 
 //Latch for LED Driver
 const int latchPin = 10;
@@ -17,41 +22,26 @@ const int m3 = 8;
 const int m4 = 9;
 //little endian bit 0 is index 0 
 
+// this is also in binary to choose the row for the lights
 const int r1 = A0;
 const int r2 = A1; //00 top of breadboard 01 second top
-
-// for lights
-// LEDS - for one column of LEDS
-// unsigned int off = 0b11110000;
-// unsigned int fourth = 0b11110001;
-// unsigned int third = 0b11110010;
-// unsigned int second = 0b11110100;
-// unsigned int first = 0b11111000;
 
 // grid info
 const int length = 4;
 
-// song info //possibly have duration in terms of how many notes of a certain subdivious because actual time doesnt matter when we play at 100x speed
-//const int duration[] = {1, 1, 1, 1, 1, 1, 2} example
-//const int duration[] = {500, 500, 500, 500, 500, 500, 1000, 500, 500, 1000, 500, 500, 1000, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 2000};
+// to change note order just change the notes array
 const uint8_t notes[] = {3, 2, 1, 2, 3, 3, 3, 3, 2, 2, 2, 2, 3, 4, 4, 4, 3, 2, 1, 2, 3, 3, 3, 3, 2, 2, 3, 2, 1, 1, 1, 1}; //adjust notes so it doesnt need durations
 const int song_length = 32;
-
-//Light Queue basically access 
 
 uint8_t noteQueue[length] = {0, 0, 0, 0}; // 4 rows of notes (left is top, right is bottom) bitmask uint8_t
 int noteIndex = 0;
 
 const uint8_t winP[length] = {10, 5, 10, 5}; //checkerboard pattern for win
 
-
 // song speed info
 int interval = 1000;
-
-
 int level = 1;
-
-
+// ----------------------------------------------------------------------------------------------------------------------------------------
 
 void setup() {
   pinMode(latchPin, OUTPUT);
@@ -78,11 +68,9 @@ void setup() {
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   digitalWrite(latchPin, LOW); 
 
-  SPI.transfer(0b11111111); //second half is the only important data 0000xxxx where x is data is only needed
+  SPI.transfer(0b11111111); //second half is the only important data 0000xxxx where x is the data we need to send
 
   digitalWrite(latchPin, HIGH); 
-
-
 }
 
 void advanceQueue() {
@@ -129,8 +117,6 @@ void advanceQueue() {
     lose();
   }
 }
-
-//important -------------------------------------------------------------------------------------------------------------
 
 int currentRow = 0;
 unsigned long lastRowUpdate = 0;
