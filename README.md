@@ -43,7 +43,7 @@ This project uses an **Arduino Uno**, a hand-soldered LED matrix, button inputs,
 
 ## 📂 CAD Files
 All CAD files for the physical piano build are available here:  
-🔗 [Onshape CAD Files]([https://cad.onshape.com/documents/6f750370d802f45d631022e7/w/77947f8f69402a572d0c1280/e/21f73c9ca73a5f59ce34e73c](https://cad.onshape.com/documents/6f750370d802f45d631022e7/w/77947f8f69402a572d0c1280/e/21f73c9ca73a5f59ce34e73c?renderMode=0&uiState=686adfc845e90a37d9e83f3e))
+🔗 [Onshape CAD Files](https://cad.onshape.com/documents/6f750370d802f45d631022e7/w/77947f8f69402a572d0c1280/e/21f73c9ca73a5f59ce34e73c](https://cad.onshape.com/documents/6f750370d802f45d631022e7/w/77947f8f69402a572d0c1280/e/21f73c9ca73a5f59ce34e73c?renderMode=0&uiState=686adfc845e90a37d9e83f3e)
 
 ---
 
