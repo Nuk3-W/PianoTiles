@@ -55,43 +55,43 @@ All CAD files for the physical piano build are available here:
 ## 🔧 Parts List
 
 ### Capacitors
-- 4× 1µF capacitor (0603)
-- 9× 100nF capacitor (0603)  
-- 2× 100µF capacitor (0603)
-- 1× 1000µF capacitor (0603)
-- 1× 3.3µF capacitor (0603)
+- 4× 1µF capacitor 
+- 9× 100nF capacitor   
+- 2× 100µF capacitor 
+- 1× 1000µF capacitor
+- 1× 3.3µF capacitor 
 
 ### Semiconductors
-- 4× General purpose rectifier diode (SMA package)
-- 16× LED, Everlight 19-217/BHC-ZL1M2RY/3T
-- 4× NPN transistor (SOT-23)
+- 4× General-purpose rectifier diode
+- 16× LED
+- 4× NPN transistor
 - 4× P-channel MOSFET transistor
 
 ### Resistors
-- 8× 10kΩ resistor (0603)
-- 13× 1kΩ resistor (0603)
-- 4× 40kΩ resistor (0603)
+- 8× 10kΩ resistor 
+- 13× 1kΩ resistor 
+- 4× 40kΩ resistor 
 
 ### Mechanical/Interface
-- 4× Pushbutton switch (XKB TS-1187A-B-A-B)
+- 4× Pushbutton switch
 - 1× Speaker
 
 ### Microcontroller & Logic
 - 1× Arduino Uno
-- 1× SN74AHC139N, dual 2-to-4 decoder (PDIP-16)
-- 1× TLC5916IN, 8-bit LED driver (PDIP-16)
+- 1× SN74AHC139N, dual 2-to-4 decoder 
+- 1× TLC5916IN, 8-bit LED driver 
 
 ### Analog Components
-- 4× 555 timer IC (DIP-8)
-- 1× Op-amp (PDIP-8)
-- 1× Audio amplifier (SOP-8)
+- 4× 555 timer IC 
+- 1× Op-amp 
+- 1× Audio amplifier
 
 
 ### physical
 
-- plywood 2ft x 2ft
-- acrylic 1ft x 1ft
-- wood glue / wood screws
+- Plywood 2ft x 2ft
+- Acrylic 1ft x 1ft
+- Wood glue/wood screws
 
 ---
 
