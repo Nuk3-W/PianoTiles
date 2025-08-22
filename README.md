@@ -52,6 +52,51 @@ All CAD files for the physical piano build are available here:
 
 ---
 
+## 🔧 Parts List
+
+### Capacitors
+- 4× 1µF capacitor (0603)
+- 9× 100nF capacitor (0603)  
+- 2× 100µF capacitor (0603)
+- 1× 1000µF capacitor (0603)
+- 1× 3.3µF capacitor (0603)
+
+### Semiconductors
+- 4× General purpose rectifier diode (SMA package)
+- 16× LED, Everlight 19-217/BHC-ZL1M2RY/3T
+- 4× NPN transistor (SOT-23)
+- 4× P-channel MOSFET transistor
+
+### Resistors
+- 8× 10kΩ resistor (0603)
+- 13× 1kΩ resistor (0603)
+- 4× 40kΩ resistor (0603)
+
+### Mechanical/Interface
+- 4× Pushbutton switch (XKB TS-1187A-B-A-B)
+- 1× Speaker
+
+### Microcontroller & Logic
+- 1× Arduino Uno
+- 1× SN74AHC139N, dual 2-to-4 decoder (PDIP-16)
+- 1× TLC5916IN, 8-bit LED driver (PDIP-16)
+
+### Analog Components
+- 4× 555 timer IC (DIP-8)
+- 1× Op-amp (PDIP-8)
+- 1× Audio amplifier (SOP-8)
+
+
+### physical
+
+- plywood 2ft x 2ft
+- acrylic 1ft x 1ft
+- wood glue / wood screws
+
+---
+
+
+
 ## 🚀 Getting Started
 1. Download the code and open in **Arduino IDE**  
 2. Wire the hardware according to the **Pinout**  
