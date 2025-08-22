@@ -33,6 +33,11 @@ This project uses an **Arduino Uno**, a hand-soldered LED matrix, button inputs,
 
 ---
 
+## 📋 Schematic
+![Piano Tiles Schematic](Images/SCH_PianoTiles_1-PianoTiles_2025-08-21.png)
+
+---
+
 ## 🎵 Gameplay
 - Notes fall down the LED grid in sync with a song  
 - Hit the correct key at the right time to play the note  
