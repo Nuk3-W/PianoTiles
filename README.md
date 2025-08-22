@@ -61,6 +61,6 @@ All CAD files for the physical piano build are available here:
 ---
 
 ## 🎨 Demo
-  
+🔗 [Demo Video](https://drive.google.com/file/d/1qG4qMrhaNVip75t2vJNatuy2bE1sMktK/view?usp=drive_link)
 
 ---
